@@ -1,0 +1,24 @@
+Thayná dos Santos Bittencourt
+
+mkdir curso-git-ead-ifrn
+cd curso-git-ead-ifrn
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead
+cd curso-branchs-ifrn-ead
+echo "Só é 1 se todas as entradas forem 1" > texto.txt
+git add texto.txt
+git commit -m "Definição da porta AND"
+git checkout -b feature-1
+echo "A saída é igual a 1 quando ambas as entradas são iguais a 1." > texto.txt
+git add texto.txt
+git commit -m "Aprimorando definição da porta AND"
+git checkout main
+echo "Quando todas as entradas forem iguais a 1 a saída será 1" > texto.txt
+git add texto.txt
+git commit -m "Melhorando definição da porta AND"
+git merge feature-1
+git add texto.txt
+git commit -m "Resolvendo conflito entre main e feature-1 no arquivo texto.txt"
+git checkout -b add-comandos
+echo "Thayná dos Santos Bittencourt" > comandos.txt
+git add comandos.txt
+git commit -m "Adicionando comandos utilizados nessa atividade"
