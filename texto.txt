@@ -1,1 +1,1 @@
-Só é 1 se todas as entradas forem 1
+A saída é igual a 1 quando ambas as entradas são iguais a 1.
